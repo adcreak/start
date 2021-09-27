@@ -1,0 +1,92 @@
+body {
+    font-family: $font_primary;
+    font-style: normal;
+    font-size: $font_size;
+    font-weight: $font_weight;
+    line-height: $line_height;
+    background-color: $bg_color_main;
+    color: $text_color_main;
+}
+
+/* CONTAINERS
+===================================================== */
+.site-content {
+    position: relative;
+    @extend %page-footer-down;
+}
+
+.container {
+    max-width: $container + $container_padding * 2;
+    width: 100%;
+    margin-top: 0;
+    margin-right: auto;
+    margin-bottom: 0;
+    margin-left: auto;
+    padding-top: 0;
+    padding-right: $container_padding;
+    padding-bottom: 0;
+    padding-left: $container_padding;
+}
+
+/* SECTION
+===================================================== */
+.section {
+    padding: $section_offset 0;
+}
+
+/* TITLES
+===================================================== */
+h1 {}
+
+h2 {}
+
+h3 {}
+
+
+/* TEXT
+===================================================== */
+.text,
+.text p {
+}
+
+.-accent {
+    color: $accent_color;
+}
+
+.-lighter {
+    font-weight: lighter;
+}
+
+/* BUTTONS
+===================================================== */
+.btn {
+
+}
+
+.btn_action {
+
+}
+
+.btn_icon {
+
+}
+
+/* LOGO
+===================================================== */
+.logo {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+
+    .header & {
+
+        width: $width_top_logo;
+        height: $height_top_logo;
+    }
+}

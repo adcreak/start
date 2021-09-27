@@ -1,0 +1,15 @@
+# Игнорировать каталог node_modules
+node_modules/
+
+# Игнорирование логов
+logs
+*.log
+
+# Игнорирование каталога со сборкой проекта
+dist/
+
+.vscode/
+
+package-lock.json
+[alias]
+  hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
