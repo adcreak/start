@@ -121,11 +121,14 @@
 //==========================================
 @mixin burger {
     .burger-menu {
+        position: absolute;
+        top: 50%;
+        right: 20px;
+        transform: translateY(-50%);
         display: inline-block;
         cursor: pointer;
         background-color: transparent;
         border: none;
-        position: relative;
         width: $burgerWidth;
         height: $burgerHeight;
 

@@ -11,8 +11,9 @@ body {
 /* CONTAINERS
 ===================================================== */
 .site-content {
-    position: relative;
-    @extend %page-footer-down;
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
 }
 
 .container {
@@ -36,57 +37,27 @@ body {
 
 /* TITLES
 ===================================================== */
-h1 {}
+.top-title {}
 
-h2 {}
+.title {
+    &_center {
+        text-align: center;
+    }
+}
 
-h3 {}
+.subtitle {}
 
+.suptitle {}
 
 /* TEXT
 ===================================================== */
-.text,
-.text p {
-}
+.text-content {}
 
-.-accent {
-    color: $accent_color;
-}
-
-.-lighter {
-    font-weight: lighter;
-}
+.descr {}
 
 /* BUTTONS
 ===================================================== */
 .btn {
-
-}
-
-.btn_action {
-
-}
-
-.btn_icon {
-
-}
-
-/* LOGO
-===================================================== */
-.logo {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-
-    img {
-        width: 100%;
-        height: 100%;
-        object-fit: contain;
-    }
-
-    .header & {
-
-        width: $width_top_logo;
-        height: $height_top_logo;
-    }
+    cursor: pointer;
+    transition: $transition;
 }

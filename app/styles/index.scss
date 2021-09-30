@@ -4,6 +4,7 @@
 @import "base/mixin";
 @import "base/fonts";
 @import "base/default";
+@include burger;
 @import "base/common";
 @import "common/*";
 @import "pages/home/*";

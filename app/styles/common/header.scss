@@ -1,1 +1,79 @@
-@include burger;
+.header {
+    background-color: lightsteelblue;
+    padding: 20px 0;
+}
+
+.header {
+    position: relative;
+    &__inner {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__btns {
+        display: flex;
+        align-items: center;
+    }
+
+    &__phone {
+        transition: $transition;
+        &:hover {
+            color: darken($text_color_main, 10%);
+            text-decoration: underline;
+        }
+    }
+}
+
+.logo {
+    flex: 0 0 auto;
+    &__img {}
+}
+
+.menu {
+    &__list {
+        display: flex;
+    }
+
+    &__item {
+        margin: 0 20px;
+        list-style-type: none;
+    }
+
+    &__link {
+        position: relative;
+        padding: 5px;
+        transition: $transition;
+
+        // color: 
+        &::before,
+        &::after {
+            content: "";
+            display: block;
+            position: absolute;
+            width: 0;
+            height: 2px;
+            background-color: black;
+            transition: $transition;
+        }
+
+        &::before {
+            bottom: 0;
+            left: 0;
+        }
+
+        &::after {
+            top: 0;
+            right: 0;
+        }
+
+        &:hover {
+            color: darken($text_color_main, 10%);
+
+            &::before,
+            &::after {
+                width: 50%;
+            }
+        }
+    }
+}

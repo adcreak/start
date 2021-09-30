@@ -1,98 +1,47 @@
-
-// CSS variables
-// :root {
-//     --color_white: ;
-//     --color_black: #000000;
-//     --color_accent: #DDA046;
-// }
-
-//-----------------------------------------------------
 //COLORS
 //=====================================================
 
 $colors: (
     black: #000000,
     white: #ffffff,
-    black-light: #1E0801,
-    gold: #DDA046,
     red: #ff0000,
-    gradient: linear-gradient(180deg, #FFDC83 0%, #FBD26A 25%, #C17024 84.9%, #E3A548 100%),
 );
+$accent_color:  map-get($colors, red);
 // /* PRESET
 // ===================================================== */
 // Ширина контейнера класс .container
-$container: 1320;
+$container: 1200;
 //---------------------------------------------------------
 // Поля контейнера класс .container
 $container_padding: 20px;
-//---------------------------------------------------------
-// Основной шрифт страницы body
-$font_size: 18px;
+// /* FONTS
+// ===================================================== */
+$font_primary: 'Roboto', sans-serif;
+// $font_second: 'Montserrat', sans-serif;
+// $font_third: 'Poppins', sans-serif;
+$font_size: 16px;
 $font_weight: 400;
-$line_height: 1.16;
+$line_height: 1;
 // Основной цвет текста по умолчанию - черный
 $text_color_main: map-get($colors, black);
 // Основной BG сайта по умолчанию - белый
 $bg_color_main: map-get($colors, white);
 // Вертикальные поля класса .section
-$section_offset: 80px;
+$section_offset: 60px;
 //---------------------------------------------------------
 $main_offset: 20px;
 //---------------------------------------------------------
 // Плавность анимации при :hover
 $transition: 0.2s ease-in-out;
 //---------------------------------------------------------
-// Размеры логотипа класс .logo c атрибутом data-header-logo
-$width_top_logo: 172px;
-$height_top_logo: 44px;
-//---------------------------------------------------------
-
-$text_color_second: map-get($colors, black-light);
-$text_color_third: map-get($colors, white);
-
-$bg_color_second: map-get($colors, black);
-$bg_color_third: map-get($colors, black-light);
-
-$title_color: map-get($colors, black-light);
-
-$accent_color:  map-get($colors, gold);
-
-$gradient: map-get($colors, gradient);
-// /* FONTS
-// ===================================================== */
-$font_primary: 'Roboto', sans-serif;
-$font_second: 'Montserrat', sans-serif;
-$font_third: 'Poppins', sans-serif;
-
-$text_shadow: 0px 0px 28px #000000;
-
-$bg_opacity: rgba(255, 255, 255, 0.71);
-
-
-
-$border_radius: 5px;
-
 // /* BURGER
 // ===================================================== */
 // Ширина бургера класс .burger-menu
-$burgerWidth: 35px;
+$burgerWidth: 30px;
 // Высота бургера
-$burgerHeight: 27px;
+$burgerHeight: 20px;
 // Толщина линии
-$burgerLineHeight: 3px;
+$burgerLineHeight: 2px;
 // Цвет линии
 $burgerLineColor: $text_color_main;
-
-
-//media-min
-$desktop: 1366.02px;
-$laptop: 1024.02px;
-$tablet: 768.02px;
-$mobile: 375.02px;
-//media-max
-$desktop: 1366.02px;
-$laptop: 1024.02px;
-$tablet: 768.02px;
-$mobile: 375.02px;
-
 
