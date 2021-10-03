@@ -1,8 +1,11 @@
 body {
-    font-family: $font_primary;
-    font-style: normal;
-    font-size: $font_size;
-    font-weight: $font_weight;
+    font: {
+        family: $font_primary;
+        style: normal;
+        size: $font_size;
+        weight: $font_weight;
+    }
+
     line-height: $line_height;
     background-color: $bg_color_main;
     color: $text_color_main;
@@ -19,14 +22,20 @@ body {
 .container {
     max-width: $container + $container_padding * 2;
     width: 100%;
-    margin-top: 0;
-    margin-right: auto;
-    margin-bottom: 0;
-    margin-left: auto;
-    padding-top: 0;
-    padding-right: $container_padding;
-    padding-bottom: 0;
-    padding-left: $container_padding;
+
+    margin: {
+        top: 0;
+        right: auto;
+        bottom: 0;
+        left: auto;
+    }
+
+    padding: {
+        top: 0;
+        right: $container_padding;
+        bottom: 0;
+        left: $container_padding;
+    }
 }
 
 /* SECTION
@@ -59,5 +68,16 @@ body {
 ===================================================== */
 .btn {
     cursor: pointer;
+    // background-color: transparent;
+    // border: none;
+
+    // font: {
+    //     family: inherit;
+    //     style: inherit;
+    //     weight: inherit;
+    //     size: inherit;
+    // }
+
+    // line-height: 1;
     transition: $transition;
 }
