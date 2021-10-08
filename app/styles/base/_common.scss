@@ -1,14 +1,14 @@
 body {
     font: {
-        family: $font_primary;
+        family: var(--font_primary);
         style: normal;
-        size: $font_size;
-        weight: $font_weight;
+        size: var(--font_size);
+        weight: var(--font_weight);
     }
 
-    line-height: $line_height;
-    background-color: $bg_color_main;
-    color: $text_color_main;
+    line-height: var(--line_height);
+    background-color: var(--bg_color_main);
+    color: var(--text_color_main);
 }
 
 /* CONTAINERS
@@ -20,7 +20,7 @@ body {
 }
 
 .container {
-    max-width: $container + $container_padding * 2;
+    max-width: calc(var(--container) + var(--container_padding)*2);
     width: 100%;
 
     margin: {
@@ -32,26 +32,28 @@ body {
 
     padding: {
         top: 0;
-        right: $container_padding;
+        right: var(--container_padding);
         bottom: 0;
-        left: $container_padding;
+        left: var(--container_padding);
     }
 }
 
 /* SECTION
 ===================================================== */
 .section {
-    padding: $section_offset 0;
+    // padding: var(--section_offset) 0;
 }
 
 /* TITLES
 ===================================================== */
-.top-title {}
-
 .title {
-    &_center {
-        text-align: center;
-    }
+    &_lg {}
+
+    &_md {}
+
+    &_sm {}
+
+    &_xs {}
 }
 
 .subtitle {}
@@ -64,20 +66,20 @@ body {
 
 .descr {}
 
+.accent {}
+
 /* BUTTONS
 ===================================================== */
 .btn {
     cursor: pointer;
     // background-color: transparent;
     // border: none;
-
     // font: {
     //     family: inherit;
     //     style: inherit;
     //     weight: inherit;
     //     size: inherit;
     // }
-
     // line-height: 1;
-    transition: $transition;
+    transition: var(--transition);
 }

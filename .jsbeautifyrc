@@ -50,6 +50,7 @@
     ],
         "inline": [
 
+      "a",
       "abbr",
       "area",
       "audio",

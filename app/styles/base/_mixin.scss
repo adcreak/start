@@ -1,15 +1,9 @@
-
 //            NAVIGATION
 //===========================================
 //  fonts
 //  media
 //  custom_checkbox
 //  burger
-
-
-
-
-
 // FONTS
 //=====================================================
 @mixin font($font_name, $file_name, $weight, $style) {
@@ -121,19 +115,16 @@
 //==========================================
 @mixin burger {
     .burger-menu {
-        position: absolute;
-        top: 50%;
-        right: 20px;
-        transform: translateY(-50%);
+        position: relative;
         display: inline-block;
         cursor: pointer;
         background-color: transparent;
         border: none;
-        width: $burgerWidth;
-        height: $burgerHeight;
+        width: $burger_width;
+        height: $burger_height;
 
         span {
-            top: calc(#{$burgerHeight} / 2 - #{$burgerLineHeight} / 2);
+            top: calc(#{$burger_height} / 2 - #{$burger_line_height} / 2);
         }
 
         span,
@@ -144,8 +135,8 @@
             position: absolute;
             left: 0;
             width: 100%;
-            height: $burgerLineHeight;
-            background-color: $burgerLineColor;
+            height: $burger_line_height;
+            background-color: $burger_line_color;
             transition: .2s ease-in-out;
         }
 
@@ -163,12 +154,12 @@
             }
 
             &::before {
-                top: calc(#{$burgerHeight} / 2 - #{$burgerLineHeight} / 2);
+                top: calc(#{$burger_height} / 2 - #{$burger_line_height} / 2);
                 transform: rotate(-45deg);
             }
 
             &::after {
-                bottom: calc(#{$burgerHeight} / 2 - #{$burgerLineHeight} / 2);
+                bottom: calc(#{$burger_height} / 2 - #{$burger_line_height} / 2);
                 transform: rotate(-45deg);
             }
         }

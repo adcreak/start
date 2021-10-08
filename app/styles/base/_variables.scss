@@ -1,47 +1,76 @@
 //COLORS
 //=====================================================
-
-$colors: (
-    black: #000000,
-    white: #ffffff,
-    red: #ff0000,
-);
-$accent_color:  map-get($colors, red);
-// /* PRESET
-// ===================================================== */
-// Ширина контейнера класс .container
-$container: 1200;
-//---------------------------------------------------------
-// Поля контейнера класс .container
-$container_padding: 20px;
-// /* FONTS
-// ===================================================== */
-$font_primary: 'Roboto', sans-serif;
-// $font_second: 'Montserrat', sans-serif;
-// $font_third: 'Poppins', sans-serif;
-$font_size: 16px;
-$font_weight: 400;
-$line_height: 1;
-// Основной цвет текста по умолчанию - черный
-$text_color_main: map-get($colors, black);
-// Основной BG сайта по умолчанию - белый
-$bg_color_main: map-get($colors, white);
-// Вертикальные поля класса .section
-$section_offset: 60px;
-//---------------------------------------------------------
-$main_offset: 20px;
-//---------------------------------------------------------
-// Плавность анимации при :hover
-$transition: 0.2s ease-in-out;
-//---------------------------------------------------------
-// /* BURGER
-// ===================================================== */
-// Ширина бургера класс .burger-menu
-$burgerWidth: 30px;
-// Высота бургера
-$burgerHeight: 20px;
-// Толщина линии
-$burgerLineHeight: 2px;
-// Цвет линии
-$burgerLineColor: $text_color_main;
-
+:root {
+    //COLORS_PALLET--------------
+    --color_white: #fff;
+    --color_black: #000;
+    --color_red: #ff0000;
+    //COLORS---------------
+    --text_color_main: var(--color_black);
+    --text_color_invert: var(--color_white);
+    --accent_color: var(--color_red);
+    --bg_color_main: var(--color_white);
+    --bg_color_invert: var(--color_black);
+    //SIZE-----------------
+    --container: 1200px;
+    // --container_wide: 1600px;
+    --container_padding: 20px;
+    //FONTS-----------------
+    --font_primary: 'Roboto', sans-serif;
+    // --font_second: 'Montserrat', sans-serif;
+    // --font_third: 'Poppins', sans-serif;
+    --font_size: 16px;
+    --font_weight: 400;
+    --line_height: 1;
+    //BURGER----------
+    --burger_width: 30px;
+    --burger_height: 20px;
+    --burger_line_height: 2px;
+    --burger_line_color: #000;
+    //OTHER--------------
+    --transition: 0.2s linear;
+}
+// $colors: (black: #000000,
+//     white: #ffffff,
+//     red: #ff0000,
+// );
+// $accent_color: map-get($colors, red);
+// // /* PRESET
+// // ===================================================== */
+// // Ширина контейнера класс .container
+// $container: 1200;
+// //---------------------------------------------------------
+// // Поля контейнера класс .container
+// $container_padding: 20px;
+// // /* FONTS
+// // ===================================================== */
+// $font_primary: 'Roboto',
+// sans-serif;
+// // $font_second: 'Montserrat', sans-serif;
+// // $font_third: 'Poppins', sans-serif;
+// $font_size: 16px;
+// $font_weight: 400;
+// $line_height: 1;
+// // Основной цвет текста по умолчанию - черный
+// $text_color_main: map-get($colors, black);
+// $text_color_invert: map-get($colors, white);
+// // Основной BG сайта по умолчанию - белый
+// $bg_color_main: map-get($colors, white);
+// // Вертикальные поля класса .section
+// $section_offset: 60px;
+// //---------------------------------------------------------
+// $main_offset: 20px;
+// //---------------------------------------------------------
+// // Плавность анимации при :hover
+// $transition: 0.2s ease-in-out;
+// //---------------------------------------------------------
+// // /* BURGER
+// // ===================================================== */
+// // Ширина бургера класс .burger-menu
+// $burger_width: 30px;
+// // Высота бургера
+// $burger_height: 20px;
+// // Толщина линии
+// $burger_line_height: 2px;
+// // Цвет линии
+// $burger_line_color: #000;
